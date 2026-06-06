@@ -176,6 +176,9 @@
         
         @media (max-width: 768px) {
             .hero-title { font-size: 2.5rem !important; line-height: 1.1 !important; }
+            .service-card p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+            .benefit-card p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+            .process-card p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         }
     </style>
 </head>
@@ -360,35 +363,35 @@
                 </div>
             </div>
 
-            <!-- Benefits Grid - MODIFICADO PARA MÓVIL 2 COLUMNAS -->
+            <!-- Benefits Grid - MODIFICADO PARA MÓVIL -->
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <div class="glass-card-sm rounded-2xl p-4 md:p-6 card-hover">
-                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                <div class="benefit-card glass-card-sm rounded-2xl p-4 md:p-6 card-hover text-center md:text-left">
+                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
                         <i data-lucide="zap" class="w-6 h-6 text-white"></i>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Velocidad Superior</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Diagnósticos precisos y soluciones rápidas. Tu equipo funcionando en tiempo récord.</p>
+                    <h3 class="text-white font-bold text-base md:text-lg mb-2">Velocidad Superior</h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Diagnósticos precisos y soluciones rápidas. Tu equipo funcionando en tiempo récord.</p>
                 </div>
-                <div class="glass-card-sm rounded-2xl p-4 md:p-6 card-hover">
-                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                <div class="benefit-card glass-card-sm rounded-2xl p-4 md:p-6 card-hover text-center md:text-left">
+                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
                         <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Calidad Garantizada</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Trabajos con garantía y soporte post-entrega. Tecnología confiable siempre.</p>
+                    <h3 class="text-white font-bold text-base md:text-lg mb-2">Calidad Garantizada</h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Trabajos con garantía y soporte post-entrega. Tecnología confiable siempre.</p>
                 </div>
-                <div class="glass-card-sm rounded-2xl p-4 md:p-6 card-hover">
-                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                <div class="benefit-card glass-card-sm rounded-2xl p-4 md:p-6 card-hover text-center md:text-left">
+                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
                         <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Precios Justos</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Presupuestos transparentes sin sorpresas. Soluciones adaptadas a tu bolsillo.</p>
+                    <h3 class="text-white font-bold text-base md:text-lg mb-2">Precios Justos</h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Presupuestos transparentes sin sorpresas. Soluciones adaptadas a tu bolsillo.</p>
                 </div>
-                <div class="glass-card-sm rounded-2xl p-4 md:p-6 card-hover">
-                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                <div class="benefit-card glass-card-sm rounded-2xl p-4 md:p-6 card-hover text-center md:text-left">
+                    <div class="w-12 h-12 bg-gradient-to-br from-accent to-cyan-600 rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
                         <i data-lucide="headset" class="w-6 h-6 text-white"></i>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Atención Directa</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Sin intermediarios. Contacto directo con quien ejecuta tu proyecto.</p>
+                    <h3 class="text-white font-bold text-base md:text-lg mb-2">Atención Directa</h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Sin intermediarios. Contacto directo con quien ejecuta tu proyecto.</p>
                 </div>
             </div>
         </div>
@@ -410,42 +413,42 @@
                 <p class="text-slate-400 max-w-2xl mx-auto">Servicios integrales de tecnología para todo tipo de necesidades</p>
             </div>
 
-            <!-- MODIFICADO PARA MÓVIL 2 COLUMNAS -->
+            <!-- MODIFICADO PARA MÓVIL -->
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                 <!-- Service 1 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="wrench" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="wrench" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Reparación de notebooks y PCs</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Diagnóstico y reparación de fallas de hardware y software. Cambio de pantallas, teclados, discos, memorias y coolers. Mantenimiento preventivo.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Reparación de notebooks y PCs</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Diagnóstico y reparación de hardware y software. Cambio de pantallas, teclados y componentes. Mantenimiento preventivo.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Hardware</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Diagnóstico</span>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="monitor" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="monitor" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Instalación de sistemas</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Instalación de Windows y drivers, optimización de rendimiento, limpieza de virus y configuración de periféricos. Tu PC como nueva.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Instalación de sistemas</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Instalación de Windows, drivers y optimización de rendimiento. Limpieza de virus y configuración de periféricos.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Windows</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Optimización</span>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="globe" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="globe" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Desarrollo web</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Sitios y aplicaciones web a medida para negocios, emprendimientos y startups. Diseño responsivo, moderno y fácil de administrar.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Desarrollo web</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Sitios y aplicaciones web a medida para negocios y startups. Diseño responsivo y moderno.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">React</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Node.js</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">PostgreSQL</span>
@@ -453,13 +456,13 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="smartphone" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="smartphone" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Apps móviles</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Apps para Android e iOS con React Native. Desde el diseño y experiencia de usuario hasta la publicación en las tiendas oficiales.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Apps móviles</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Apps para Android e iOS con React Native. Desde el diseño hasta la publicación en tiendas oficiales.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Android</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">iOS</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">React Native</span>
@@ -467,45 +470,44 @@
                 </div>
 
                 <!-- Service 5 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="headset" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="headset" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Soporte técnico remoto</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Resolución de problemas de forma remota sin que tengas que moverte. Rápido, efectivo y sin complicaciones.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Soporte técnico remoto</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Resolución de problemas de forma remota sin que tengas que moverte. Rápido y efectivo.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Remoto</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Multiplataforma</span>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group">
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group text-center md:text-left">
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="file-text" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Gestión documental</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Digitalización segura de documentos, organización de archivos y automatización de flujos. Ideal para empresas que buscan eficiencia.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Gestión documental</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Digitalización segura de documentos, organización de archivos y automatización de flujos de trabajo.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Digitalización</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Automatización</span>
                     </div>
                 </div>
 
-                <!-- Service 7: Mantenimiento, actualización y hosting -->
-                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group relative overflow-hidden col-span-2 md:col-span-1">
+                <!-- Service 7: Mantenimiento -->
+                <div class="service-card glass-card-sm rounded-2xl p-4 md:p-8 card-hover group relative overflow-hidden col-span-2 md:col-span-1 text-center md:text-left">
                     <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
                     <div class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-accent to-cyan-600 rounded-full text-[10px] font-bold text-white uppercase tracking-wider">Mensual</div>
-                    <div class="service-icon w-16 h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                        <i data-lucide="cloud" class="w-8 h-8 text-white"></i>
+                    <div class="service-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                        <i data-lucide="cloud" class="w-7 h-7 md:w-8 md:h-8 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Mantenimiento, actualización y hosting</h3>
-                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Una vez desarrollada tu app web, app móvil o landing page, te ofrecemos un servicio mensual integral: hosting en servidor en la nube (cloud), actualizaciones de seguridad, backups automáticos, monitoreo de performance y soporte continuo. Tu proyecto siempre online, actualizado y funcionando.</p>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Mantenimiento y hosting</h3>
+                    <p class="text-slate-400 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">Servicio mensual integral: hosting cloud, actualizaciones de seguridad, backups y soporte continuo.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Cloud</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Backups</span>
                         <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Soporte</span>
-                        <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Updates</span>
                     </div>
                 </div>
             </div>
@@ -552,7 +554,7 @@
                 </div>
             </div>
 
-            <!-- Cloud Hosting / Mantenimiento Highlight -->
+            <!-- Cloud Hosting -->
             <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden mb-12">
                 <div class="absolute top-0 right-0 w-96 h-96 cloud-glow rounded-full blur-3xl"></div>
                 <div class="relative grid lg:grid-cols-2 gap-10 items-center">
@@ -572,26 +574,26 @@
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
-                    <!-- MODIFICADO PARA MÓVIL 2 COLUMNAS -->
+                    <!-- MODIFICADO PARA MÓVIL -->
                     <div class="grid grid-cols-2 gap-3 md:gap-4">
-                        <div class="glass-card-sm rounded-2xl p-5">
-                            <i data-lucide="server" class="w-8 h-8 text-accent mb-3"></i>
-                            <h4 class="text-white font-bold mb-1">Hosting Cloud</h4>
+                        <div class="glass-card-sm rounded-2xl p-4 md:p-5 text-center">
+                            <i data-lucide="server" class="w-8 h-8 text-accent mb-3 mx-auto"></i>
+                            <h4 class="text-white font-bold mb-1 text-sm md:text-base">Hosting Cloud</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">Tu app corriendo 24/7 en servidores cloud de alto rendimiento.</p>
                         </div>
-                        <div class="glass-card-sm rounded-2xl p-5">
-                            <i data-lucide="shield" class="w-8 h-8 text-accent mb-3"></i>
-                            <h4 class="text-white font-bold mb-1">Actualizaciones</h4>
+                        <div class="glass-card-sm rounded-2xl p-4 md:p-5 text-center">
+                            <i data-lucide="shield" class="w-8 h-8 text-accent mb-3 mx-auto"></i>
+                            <h4 class="text-white font-bold mb-1 text-sm md:text-base">Actualizaciones</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">Parches de seguridad y mejoras de versiones siempre al día.</p>
                         </div>
-                        <div class="glass-card-sm rounded-2xl p-5">
-                            <i data-lucide="database" class="w-8 h-8 text-accent mb-3"></i>
-                            <h4 class="text-white font-bold mb-1">Backups</h4>
+                        <div class="glass-card-sm rounded-2xl p-4 md:p-5 text-center">
+                            <i data-lucide="database" class="w-8 h-8 text-accent mb-3 mx-auto"></i>
+                            <h4 class="text-white font-bold mb-1 text-sm md:text-base">Backups</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">Copias de seguridad automáticas y restauración garantizada.</p>
                         </div>
-                        <div class="glass-card-sm rounded-2xl p-5">
-                            <i data-lucide="activity" class="w-8 h-8 text-accent mb-3"></i>
-                            <h4 class="text-white font-bold mb-1">Monitoreo</h4>
+                        <div class="glass-card-sm rounded-2xl p-4 md:p-5 text-center">
+                            <i data-lucide="activity" class="w-8 h-8 text-accent mb-3 mx-auto"></i>
+                            <h4 class="text-white font-bold mb-1 text-sm md:text-base">Monitoreo</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">Seguimiento de performance y disponibilidad en tiempo real.</p>
                         </div>
                     </div>
@@ -906,49 +908,49 @@
                 <p class="text-slate-400 max-w-2xl mx-auto">Un proceso simple y transparente para que tu experiencia sea impecable de principio a fin</p>
             </div>
 
-            <!-- MODIFICADO PARA MÓVIL 2 COLUMNAS -->
+            <!-- MODIFICADO PARA MÓVIL -->
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <div class="glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">01</div>
+                <div class="process-card glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group text-center md:text-left">
+                    <div class="absolute top-0 right-0 text-6xl md:text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">01</div>
                     <div class="relative">
-                        <div class="w-14 h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                            <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                            <i data-lucide="message-circle" class="w-6 h-6 md:w-7 md:h-7 text-white"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Consulta Inicial</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">Nos contactás por WhatsApp o formulario y coordinamos una consulta sin cargo.</p>
+                        <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Consulta Inicial</h3>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Nos contactás por WhatsApp o formulario y coordinamos una consulta sin cargo.</p>
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">02</div>
+                <div class="process-card glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group text-center md:text-left">
+                    <div class="absolute top-0 right-0 text-6xl md:text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">02</div>
                     <div class="relative">
-                        <div class="w-14 h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                            <i data-lucide="search" class="w-7 h-7 text-white"></i>
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                            <i data-lucide="search" class="w-6 h-6 md:w-7 md:h-7 text-white"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Diagnóstico y propuesta</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">Evaluamos la situación y te presentamos una solución clara con presupuesto sin sorpresas.</p>
+                        <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Diagnóstico y propuesta</h3>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Evaluamos la situación y te presentamos una solución clara con presupuesto sin sorpresas.</p>
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">03</div>
+                <div class="process-card glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group text-center md:text-left">
+                    <div class="absolute top-0 right-0 text-6xl md:text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">03</div>
                     <div class="relative">
-                        <div class="w-14 h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                            <i data-lucide="hammer" class="w-7 h-7 text-white"></i>
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                            <i data-lucide="hammer" class="w-6 h-6 md:w-7 md:h-7 text-white"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Ejecución</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">Nos ponemos a trabajar. Te mantenemos informado del avance en todo momento.</p>
+                        <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Ejecución</h3>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Nos ponemos a trabajar. Te mantenemos informado del avance en todo momento.</p>
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">04</div>
+                <div class="process-card glass-card rounded-2xl p-4 md:p-8 card-hover relative overflow-hidden group text-center md:text-left">
+                    <div class="absolute top-0 right-0 text-6xl md:text-8xl font-black text-accent/5 group-hover:text-accent/10 transition-colors">04</div>
                     <div class="relative">
-                        <div class="w-14 h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                            <i data-lucide="check-circle" class="w-7 h-7 text-white"></i>
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-accent to-cyan-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg shadow-cyan-500/30 mx-auto md:mx-0">
+                            <i data-lucide="check-circle" class="w-6 h-6 md:w-7 md:h-7 text-white"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Entrega y soporte</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">Entregamos el trabajo terminado y ofrecemos soporte post-entrega para que todo funcione perfecto.</p>
+                        <h3 class="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Entrega y soporte</h3>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Entregamos el trabajo terminado y ofrecemos soporte post-entrega para que todo funcione perfecto.</p>
                     </div>
                 </div>
             </div>
