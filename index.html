@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+
+                #form-success {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+              </style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -265,6 +284,11 @@
             background: rgba(245, 158, 11, 0.15);
             border: 2px solid #f59e0b;
             box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+        
+        /* Transición suave para el mensaje de éxito */
+        #form-success {
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
         
         @media (max-width: 768px) {
@@ -1465,7 +1489,7 @@
             });
         });
 
-        // Formspree Form Submission
+        // Formspree Form Submission - CON AUTO-HIDE DEL MENSAJE DE ÉXITO
         const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
         const formSuccess = document.getElementById('form-success');
@@ -1476,6 +1500,7 @@
             
             // Ocultar mensajes previos
             formSuccess.classList.add('hidden');
+            formSuccess.style.opacity = '';
             formError.classList.add('hidden');
             
             // Cambiar estado del botón a "Enviando..."
@@ -1495,20 +1520,29 @@
                 });
                 
                 if (response.ok) {
-                    // Éxito
+                    // Éxito - Mostrar mensaje
                     formSuccess.classList.remove('hidden');
                     contactForm.reset();
                     
                     // Scroll al mensaje de éxito
                     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     
-                    // Restaurar botón después de 3 segundos
+                    // Restaurar botón después de 2 segundos
                     setTimeout(() => {
                         submitBtn.innerHTML = originalBtnHTML;
                         submitBtn.disabled = false;
                         submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
                         lucide.createIcons();
-                    }, 3000);
+                    }, 2000);
+                    
+                    // Ocultar mensaje de éxito con fade-out después de 5 segundos
+                    setTimeout(() => {
+                        formSuccess.style.opacity = '0';
+                        setTimeout(() => {
+                            formSuccess.classList.add('hidden');
+                            formSuccess.style.opacity = '';
+                        }, 500);
+                    }, 5000);
                 } else {
                     throw new Error('Error en el envío');
                 }
@@ -1551,4 +1585,9 @@
 
 
 
-
+              <script>
+                              
+              </script>
+                        </body>
+                        </html>
+                    
